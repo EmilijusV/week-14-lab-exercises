@@ -15,5 +15,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: mashup-test
-        run: (cd mashup && npm audit)
-      - run: echo "Done, The code is secure now"
+        run: (cd mashup && npm i -g lint && npm run lint)
+      - run: echo "Done, The code is checked"
