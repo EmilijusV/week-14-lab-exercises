@@ -10,7 +10,7 @@ jobs:
         run: (cd insecure && npm audit)
       - run: echo "Done"
 
-  Explore-GitHub-Actions:
+  Mashup Audit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
